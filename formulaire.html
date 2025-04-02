@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>formulaire</title>
+    <link rel="icon" href="image 13.png">
+</head>
+<body class="formulaire">
+       <!-- tableaux aonglet -->
+       <div class="tab-container">
+        <!-- Onglets -->
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label for="tab1">Client</label>
+    
+        <input type="radio" id="tab2" name="tabs">
+        <label for="tab2">fournisseur</label>
+    
+        <input type="radio" id="tab3" name="tabs">
+        <label for="tab3">Autre</label>
+
+        <!-- formulaire client -->
+        <div class="tab-content" id="content1">
+            <form class="client" action="traitement.php" method="post">
+                <fieldset  class="client"><center><legend><big><b>formulaire client</b></big></legend></center><br>
+                        <label for="nom">NOM:</label>
+                        <INput type="text" id="nom" name="nom" placeholder="NOM" required></INput ><br><br>
+                        <label for="prenoms">PRENOMS:</label>
+                        <INput type="text" id="prenoms" name="prenoms" placeholder="prenoms" required></INput><br><br>
+                        <label for="email">EMAIL:</label>
+                        <INput type="email" id="email" name="email" placeholder="mon@email.com" required></INput><br><br>
+                        <label for="contact">CONTACT:</label>
+                        <input type="tel" id="contact" name="contact" placeholder="0000000001" required></input><br><br>
+                        <p>indiquer les services dont vous avez besoin</p>
+                        <input type="radio" id="Réseaux Informatiques" name="Réseaux Informatiques"> 
+                        <label for="Réseaux Informatiques">Réseaux Informatiques</label><br>
+                        <input type="radio" id="telecommunication" name="telecommunication"> 
+                        <label for="telecommunication">telecommunication</label><br>
+                        <input type="radio" id="Génie Logiciel" name="Génie Logiciel"> 
+                        <label for="Génie Logiciel">Génie Logiciel</label><br>
+                        <input type="radio" id="intelligence economique" name="intelligence economique"> 
+                        <label for="intelligence economique">intelligence economique</label><br>
+                        <input type="radio" id="technologie internet" name="technologie internet"> 
+                        <label for="technologie inter">technologie inter</label><br>
+                        <input type="radio" id="securite des SI" name="securite des SI"> 
+                        <label for="services des SI">securite des SI</label><br><br>
+                        <button type="submit">Envoyer</button>
+                    </fieldset>
+            </form>
+        </div>   
+        <!-- formulaire fouurnisseur -->
+        <div class="tab-content" id="content2">
+            <form action="traintement.php" method="post">
+                <fieldset class="fournisseur">
+                    <center><legend><big><b>formulaire fournisseur</b></big></legend></center><br><br>
+                    <b><big>veuillez remplir le formulaire suivant</big></b><br><br>
+                    <label for="proprietaire de l'entreprise">proprietairede l'entreprise:</label>
+                    <input type="text" id="proprietairede l'entreprise" placeholder="proprietairede l'entreprise"><br><br>
+                    <label for="Nom de l'entreprise">Nom de l'entreprise:</label>
+                    <input type="text" id="Nom de l'entreprise" placeholder="Nom de l'entreprise"><br><br>
+                    <label for="Contact">Contact:</label>
+                    <input type="text" id="Contact" placeholder="Contact"><br><br>
+                    <label for="EMAIL">EMAIL</label>
+                    <input type="text" id="EMAIL" placeholder="EMAIL"><br><br>
+                    <label for="numero d'enregistrement de l'entite d'Etat">numero d'enregistrement de l'entite d'Etat</label>
+                    <input type="text" id="numero d'enregistrement de l'entite d'Etat" placeholder="C1234567"><br><br>
+                    <label for="numero d'identification fiscal">Numero d'identification fiscal</label>
+                    <input type="text" id="numero d'identification fiscal" placeholder="347593021"><br>
+                    <button type="submit">Envoyer</button>                
+                    <br><br>
+                </fieldset>
+            </form>
+        </div>
+        <!-- Formulaire Autre -->
+        <div class="tab-content" id="content3">
+            <form>
+                <h2>Formulaire Autre</h2>
+                <label for="message">Votre message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div><br><br>
+</body>
+</html>
