@@ -1,14 +1,16 @@
-<<<<<<< HEAD
+
 /* Styles généraux */
 body {
     font-family: 'Poppins', sans-serif;
-    color: #f0f0f0;
-    background-color: #181818;/* Noir légèrement moins dur*/
+    color: #513838;
+    background-color: #ede4e4;/* Noir légèrement moins dur*/
     line-height: 1.6;
     margin: 10;
     padding: 0;
 }
-
+p{
+    color: #374049;
+}
 h1, h2, h3 {
     font-weight: 600;
     color: #00bcd4; /* Bleu cyan moderne */
@@ -33,7 +35,7 @@ header.le-haut {
 /* Menu principal */
 .menu {
     list-style: none;
-
+   
     padding: 0;
     margin: 0;
     display: flex;
@@ -239,7 +241,7 @@ img {
 /* le reste de la page */
 
 footer {
-    background-color: #555;
+    background-color:burlywood;
     padding: 10px;
     text-align: center;
 }
